@@ -197,13 +197,7 @@ public class SucursalController {
 	 * 
 	 */
 	private List<SucursalDTO> castearListaSucursalesADTO(List<Sucursal> listaSucursal) {
-		logger.info("Inicio método castearListaSucursalesADTO");
-		List<SucursalDTO> listaSucursalDTO = new ArrayList<>();
-		for (Sucursal sucursal : listaSucursal) {
-			listaSucursalDTO.add(GeneralMapper.INSTANCE.sucursalToSucursalDTO(sucursal));
-
-		}
-		logger.info("Fin método castearListaSucursalesADTO");
+		
 		return listaSucursalDTO;
 	}
 	
